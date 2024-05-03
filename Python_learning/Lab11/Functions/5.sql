@@ -1,0 +1,11 @@
+CREATE OR REPLACE PROCEDURE Del(
+	UorN VARCHAR
+)
+AS $$
+DECLARE
+	n_userId INT;
+BEGIN
+    DELETE FROM phonebook WHERE users = UorN OR number = UorN;
+END;
+$$
+LANGUAGE PLPGSQL;
