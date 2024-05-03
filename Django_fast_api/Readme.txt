@@ -1,0 +1,1 @@
+https://github.com/IsakGairatov/KBTU_Django
