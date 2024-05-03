@@ -1,0 +1,26 @@
+.sdbrThread {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(190, 190, 190, .1);
+    background-color: #2d4671;
+    color: white;
+    cursor: pointer;
+}
+
+.sdbrThread:hover {
+    background-color: #4467a4;
+}
+
+.sdbrThread_d {
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
+}
+
+
+.sdbrThread_t {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
