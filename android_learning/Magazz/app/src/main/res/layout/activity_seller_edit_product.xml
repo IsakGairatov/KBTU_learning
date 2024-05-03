@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Roles.Seller.Seller_edit_product">
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <EditText
+        android:id="@+id/update_desc"
+        android:layout_width="282dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="desc"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/update_name"
+        app:layout_constraintStart_toStartOf="@+id/update_name"
+        app:layout_constraintTop_toBottomOf="@+id/update_name" />
+
+    <EditText
+        android:id="@+id/update_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/update_desc"
+        app:layout_constraintStart_toStartOf="@+id/update_desc"
+        app:layout_constraintTop_toBottomOf="@+id/update_desc" />
+
+    <EditText
+        android:id="@+id/Update_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/update_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_price"
+        app:layout_constraintTop_toBottomOf="@+id/update_price" />
+
+    <Button
+        android:id="@+id/seller_edit_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="@+id/seller_delete_pr"
+        app:layout_constraintEnd_toStartOf="@+id/seller_delete_pr"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seller_delete_pr" />
+
+    <Button
+        android:id="@+id/seller_delete_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:text="del"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seller_update"
+        app:layout_constraintTop_toBottomOf="@+id/Update_amount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/seller_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="update"
+        app:layout_constraintBottom_toBottomOf="@+id/seller_delete_pr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seller_delete_pr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
